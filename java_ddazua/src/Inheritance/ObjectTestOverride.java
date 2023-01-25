@@ -7,6 +7,7 @@ public class ObjectTestOverride {
 		System.out.println(b1);
 		System.out.println(b1.toString());
 		System.out.println(b1.equals(b2));
+		// 원래는 false 그러나, equals를 오버라이딩했기 떄문
 	}
 
 }
@@ -17,6 +18,6 @@ class Bclass{
 	}
 	
 	public boolean equals(Object obj) {
-		return true;
+		return true; 
 	}
 }
